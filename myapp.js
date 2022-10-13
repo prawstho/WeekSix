@@ -15,7 +15,7 @@
  *************************/
 global.DEBUG = false;
 const fs = require("fs");
-// const { initializeApp } = require('./init.js');
+const { initializeApp } = require('./init.js');
 // const { configApp } = require('./config.js');
 // const { tokenApp } = require('./token.js');
 
@@ -27,7 +27,7 @@ switch (myArgs[0]) {
     case 'init':
     case 'i':
         if(DEBUG) console.log(myArgs[0], ' - initialize the app.');
-        // initializeApp();
+        initializeApp();
         break;
     case 'config':
     case 'c':
