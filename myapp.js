@@ -13,10 +13,10 @@
  * 09 Jan 2022, PJR, File created
  *
  *************************/
-global.DEBUG = false;
+global.DEBUG = true;
 const fs = require("fs");
 const { initializeApp } = require('./init.js');
-// const { configApp } = require('./config.js');
+const { configApp } = require('./config.js');
 // const { tokenApp } = require('./token.js');
 
 const myArgs = process.argv.slice(2);
@@ -32,7 +32,7 @@ switch (myArgs[0]) {
     case 'config':
     case 'c':
         if(DEBUG) console.log(myArgs[0], ' - display the configuration file');
-        // configApp();
+        configApp();
         break;
     case 'token':
     case 't':
