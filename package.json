@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/prawstho/WeekSix#readme",
   "dependencies": {
+    "crc": "^4.1.1",
     "date-fns": "^2.29.3",
     "uuid": "^9.0.0"
   }
